@@ -1,0 +1,17 @@
+#include <iostream>
+using namespace std;
+
+int main(){
+
+int n,m,k;
+int s;
+int sum=0;
+cin >> n >> m >> k;
+for(int i=1;i<=k;i++){
+    sum+=i*n;
+}
+s=sum-m;
+if(s<=0)cout<<"0"<<endl;
+else cout<<s<<endl;
+    return 0;
+}
