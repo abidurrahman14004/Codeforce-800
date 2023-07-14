@@ -1,0 +1,18 @@
+#include<bits/stdc++.h>
+#include <string>
+using namespace std;
+
+int  main(){
+   int n,num(0);
+   string str;
+  
+   cin>>n;
+   
+   while(n--){
+   cin>>str;
+   if(str[1]=='+') num++;
+   else num--;
+}
+   cout<<num<<endl;
+    return 0;
+}
