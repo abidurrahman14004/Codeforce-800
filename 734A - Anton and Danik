@@ -1,0 +1,17 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+int main(){
+   int n,count1=0,count2=0;
+   char a;
+   cin>>n;
+   while(n--){
+   cin>>a;
+   if(a=='A')count1++;
+   else count2++;
+   }
+   if(count1>count2) cout<<"Anton"<<endl;
+   else if(count1<count2)cout<<"Danik"<<endl;
+   else cout<<"Friendship"<<endl;
+    return 0;
+}
