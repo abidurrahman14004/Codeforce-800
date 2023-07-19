@@ -1,0 +1,16 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+int main(){
+int n,p,count=0;
+cin>>n;
+while(n--){
+    cin>>p;
+    if(p==1) count++;
+    }
+   
+if(count>0) cout<<"HARD"<<endl;
+    
+else cout<<"EASY"<<endl;
+    return 0;
+}
