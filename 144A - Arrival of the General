@@ -1,0 +1,30 @@
+#include<bits/stdc++.h>
+
+using namespace std;
+int main(){
+    int max=0 ,min= 200;
+    int a=0,b=0;
+int t;cin>>t;
+for(int i=1;i<=t;i++){//we need to identify the index for the array....just deal with the index...
+  int p;
+ cin>>p;
+ if(p>max){
+    a=i;
+    max=p;
+ }
+ if(p<=min){
+    b=i;
+    min=p;
+ }
+}
+
+if (a>b){
+    cout<<(a-1)+(t-b)-1<<endl;// for overlapping there will be a minus 1.
+}else
+  cout<<(a-1)+(t-b)<<endl;
+
+
+
+
+    return 0;
+}
