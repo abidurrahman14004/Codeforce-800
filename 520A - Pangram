@@ -1,0 +1,25 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+int main(){
+
+int n; 
+string s,str;
+cin>>n>>s;
+int count=0;
+
+for(int i=0;i<n;i++){
+    s[i]=toupper(s[i]);
+    }
+
+sort(s.begin(),s.end());
+auto res = unique(s.begin(),s.end());
+
+str= string(s.begin(),res);
+if(str.size()!=26) cout<<"NO"<<endl;
+ else cout<<"YES"<<endl;   
+
+
+
+    return 0;
+}
