@@ -1,0 +1,23 @@
+#include<bits/stdc++.h>
+
+using namespace std;
+int main(){
+int n,time;
+cin>>n>>time;
+int x= 240 -time;
+int count =0;
+int total =0;
+for(int i=1;i<=n;i++){
+
+  total += i*5;
+
+  if(total>x){
+    break;
+  }
+    count++;
+}
+cout<<count<<endl;
+
+
+    return 0;
+}
