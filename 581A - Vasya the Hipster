@@ -1,0 +1,22 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+int main(){
+int a,b;
+cin>>a>>b;
+int p=0,q=0;
+if(a<b) swap(a,b);
+while(a>0){
+    a=a-1;
+    b=b-1;
+    ++p;
+    if(b==0) break;
+}
+if(a%2==0) q=a/2;
+else q=(a-1)/2;
+
+cout<<p<<" "<<q<<endl;
+
+
+    return 0;
+}
