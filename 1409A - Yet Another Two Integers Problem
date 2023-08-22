@@ -1,0 +1,20 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+int main(){
+int t; cin>>t;
+while(t--){
+long a,b;
+int count =0;
+cin>>a>>b;
+if (b<a) swap(a,b);
+int s= (b-a)%10;
+if(s>0){
+    count =(b-a)/10+1;
+}
+else count =(b-a)/10;
+
+cout<<count<<endl;
+}
+    return 0;
+}
