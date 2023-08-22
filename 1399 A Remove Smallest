@@ -1,0 +1,29 @@
+#include<bits/stdc++.h>
+ 
+using namespace std;
+ 
+int main(){
+    int t;cin>>t;
+    while(t--){
+        int p;cin>>p;
+        vector<int>v;
+   for(int i=0;i<p;i++){
+    int x; cin>>x;
+   v.push_back(x);
+ 
+   }
+ sort(v.begin(),v.end());  
+int count= v.size();
+int n = v.size();
+while(n--){
+if(v[n]==v[n-1]|| v[n]-v[n-1]==1) count--;
+}
+ 
+if(count==1) cout<<"YES"<<endl;
+else cout<<"NO"<<endl;
+ 
+    }
+ 
+ 
+    return 0;
+}
