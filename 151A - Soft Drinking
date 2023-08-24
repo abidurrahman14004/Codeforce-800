@@ -1,0 +1,16 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+int main(){
+
+int n,k,l,c,d,a,b,s;
+cin>>n>>k>>l>>c>>d>>s>>a>>b;
+int p,q,r,ans;
+p=(k*l)/a;
+q=c*d;
+r=s/b;
+ ans = min({p,q,r})/n;
+cout<<ans<<endl;
+
+    return 0;
+}
