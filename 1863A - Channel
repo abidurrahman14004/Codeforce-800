@@ -1,0 +1,43 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+int main(){
+int t; cin>>t;
+while(t--){
+
+int n,a,q;
+int flag=0;
+cin>>n>>a>>q;
+int count=0;
+string s;cin>>s;
+if(n==a){
+
+ cout<<"YES"<<endl;
+ continue;
+ }
+int p=a;
+   for(int i=0;i<q;i++){
+
+        if (s[i]=='+' ) {
+        a++;
+        p++;
+        }
+        else p--;
+        
+    if( p==n) {
+        flag=1;
+        break;
+    }
+        
+    }
+    if(flag==1) cout<<"YES"<<endl;
+    else {
+        if(a>=n) cout<<"MAYBE"<<endl;
+        else cout<<"NO"<<endl;
+    }
+
+}
+
+
+    return 0;
+}
