@@ -1,0 +1,38 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+int n;cin>>n;
+vector<int>v;
+int l=0,r=n-1,s=0,d=0,z=0;
+
+while(n--){
+    int x;cin>>x;
+    v.push_back(x);
+}
+while(l<=r){
+  if(z%2==0){
+      if(v[l]>=v[r]) {
+        s+=v[l];
+        l++;
+      }
+      else {s+=v[r];
+      r--;
+      }
+  }
+  if(z%2!=0){
+      if(v[l]>=v[r]){
+         d+=v[l];
+         l++;
+         }
+      else {
+        d+=v[r];
+        r--;
+  }
+
+}
+z++;
+
+}
+cout<<s<<" "<<d<<endl;
+    return 0;
+}
