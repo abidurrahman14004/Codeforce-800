@@ -1,0 +1,36 @@
+#include <bits/stdc++.h>
+using namespace std;
+int main() {
+  int t;
+  cin >> t;
+  int count = 0;
+  int a = 0, b = 0, c = 0;
+  vector<int> v, v1, v2, v3;
+  for (int i = 1; i <= t; i++) {
+    int x;
+    cin >> x;
+    if (x == 1) {
+      a++;
+      v1.push_back(i);
+    }
+    if (x == 2) {
+      b++;
+      v2.push_back(i);
+    }
+    if (x == 3) {
+      c++;
+      v3.push_back(i);
+    }
+  }
+  count = min(a, min(b, c));
+  cout << count << endl;
+  if (count > 0) {
+        int p = 0;
+    while (count--) {
+  
+      cout << v1[p] << " " << v2[p] << " " << v3[p] << endl;
+      p++;
+    }
+  }
+  return 0;
+}
